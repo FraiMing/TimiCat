@@ -40,7 +40,7 @@ const ClickBox = () => {
       }`}
     >
       <img
-        src="/src/assets/images/顶部装饰.svg"
+        src="/顶部装饰.svg"
         alt="顶部装饰"
         className="absolute left-0 top-0 w-full h-auto opacity-100 z-0"
       />
@@ -50,24 +50,24 @@ const ClickBox = () => {
       {(stage === "initial" || stage === "fading") && (
         <div className="absolute inset-0">
           <img
-            src="/src/assets/images/click雪花.svg"
+            src="/click雪花.svg"
             alt="click雪花"
             className="absolute left-0 top-[10.31rem] w-full max-w-[23.07rem] sm:max-w-[25rem] h-auto opacity-100 z-0"
           />
           <img
-            src="/src/assets/images/click猫爪1.svg"
+            src="/click猫爪1.svg"
             alt="click猫爪1"
             className="absolute left-2 bottom-[10rem] w-[9.38rem] sm:w-[10.5rem] h-auto opacity-80 -rotate-[21.43deg] z-5"
           />
           <img
-            src="/src/assets/images/click猫爪2.svg"
+            src="/click猫爪2.svg"
             alt="click猫爪2"
             className="absolute right-2 top-[15.19rem] w-40 sm:w-[11rem] h-auto opacity-40 rotate-[48.91deg] z-5"
           />
 
           <div className="absolute left-1/2 -translate-x-1/2 top-[12.31rem] w-full max-w-[21.25rem] sm:max-w-[23rem] h-[37.5rem] sm:h-[40rem] z-10">
             <img
-              src="/src/assets/images/Group 3.svg"
+              src="/Group 3.svg"
               alt="Group 3"
               className="w-full h-full opacity-100"
             />
@@ -79,7 +79,7 @@ const ClickBox = () => {
             }`}
           >
             <img
-              src="/src/assets/images/click对话框.svg"
+              src="/click对话框.svg"
               alt="click对话框"
               className="w-full h-auto opacity-100"
             />
@@ -102,24 +102,24 @@ const ClickBox = () => {
           } z-20`}
         >
           <img
-            src="/src/assets/images/click雪花.svg"
+            src="/click雪花.svg"
             alt="click雪花"
             className="absolute left-0 top-[10.31rem] w-full max-w-[23.07rem] sm:max-w-[25rem] h-auto opacity-100 z-0"
           />
           <img
-            src="/src/assets/images/click猫爪1.svg"
+            src="/click猫爪1.svg"
             alt="click猫爪1"
             className="absolute left-2 bottom-[10rem] w-[9.38rem] sm:w-[10.5rem] h-auto opacity-80 -rotate-[21.43deg] z-5"
           />
           <img
-            src="/src/assets/images/click猫爪2.svg"
+            src="/click猫爪2.svg"
             alt="click猫爪2"
             className="absolute right-2 top-[15.19rem] w-40 sm:w-[11rem] h-auto opacity-40 rotate-[48.91deg] z-5"
           />
 
           <div className="absolute left-1/2 -translate-x-1/2 top-[12.31rem] w-full max-w-[21.25rem] sm:max-w-[23rem] h-[37.5rem] sm:h-[40rem] z-10">
             <img
-              src="/src/assets/images/Group 3.svg"
+              src="/Group 3.svg"
               alt="Group 3"
               className="w-full h-full opacity-100"
             />
@@ -131,7 +131,7 @@ const ClickBox = () => {
             }`}
           >
             <img
-              src="/src/assets/images/click对话框.svg"
+              src="/click对话框.svg"
               alt="click对话框"
               className="w-full h-auto opacity-100"
             />
@@ -152,7 +152,7 @@ const ClickBox = () => {
         className="absolute left-1/2 top-[31.31rem] sm:top-[28rem] -translate-x-1/2 transition-opacity duration-1000 delay-300 opacity-100 disabled:opacity-50 z-30"
       >
         <img
-          src="/src/assets/images/朝左箱子.svg"
+          src="/朝左箱子.svg"
           alt="click箱子"
           className="w-[10.63rem] sm:w-[12rem] h-auto opacity-100"
         />

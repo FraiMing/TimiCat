@@ -17,19 +17,11 @@ export default function ToggleModeButton({ onClick, mode }: Props) {
       />
 
       <div className="relative z-10 w-[2.5rem] h-[2.5rem] flex items-center justify-center">
-        <img
-          src="/src/assets/images/倒计时.svg"
-          alt="倒计时"
-          className="w-[2rem] h-[2rem]"
-        />
+        <img src="/倒计时.svg" alt="倒计时" className="w-[2rem] h-[2rem]" />
       </div>
 
       <div className="relative z-10 w-[2.5rem] h-[2.5rem] flex items-center justify-center">
-        <img
-          src="/src/assets/images/时钟.svg"
-          alt="正计时"
-          className="w-[2rem] h-[2rem]"
-        />
+        <img src="/时钟.svg" alt="正计时" className="w-[2rem] h-[2rem]" />
       </div>
     </button>
   );

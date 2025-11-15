@@ -8,9 +8,9 @@ export default function BgmPlayer() {
     <div>
       <button onClick={togglePlay}>
         {isPlaying ? (
-          <img src="/src/assets/images/音乐.svg" alt="音乐" />
+          <img src="/音乐.svg" alt="音乐" />
         ) : (
-          <img src="/src/assets/images/音乐暂停.svg" alt="音乐暂停" />
+          <img src="/音乐暂停.svg" alt="音乐暂停" />
         )}
       </button>
     </div>

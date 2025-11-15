@@ -9,7 +9,7 @@ const Dress = () => {
   return (
     <div className="relative min-h-screen w-full overflow-hidden">
       <img
-        src="/src/assets/images/侧边栏三张底图.svg"
+        src="/侧边栏三张底图.svg"
         alt="背景"
         className="absolute inset-0 w-full h-full object-cover z-0"
       />

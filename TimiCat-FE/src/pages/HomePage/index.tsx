@@ -172,12 +172,12 @@ export default function Home() {
         }`}
       >
         <img
-          src="/src/assets/images/大的顶部装饰.svg"
+          src="/大的顶部装饰.svg"
           alt="顶部装饰"
           className="absolute left-0 top-0 w-full h-auto opacity-100 z-0"
         />
         <img
-          src="/src/assets/images/底页装饰.svg"
+          src="/底页装饰.svg"
           alt="底页装饰"
           className="absolute left-1 top-[15rem] w-[23.88rem] h-[35.68rem] opacity-100 z-0"
         />
@@ -197,11 +197,7 @@ export default function Home() {
               : "transition-opacity hover:opacity-80"
           }`}
         >
-          <img
-            src="/src/assets/images/更多.svg"
-            alt="菜单"
-            className="w-full h-full"
-          />
+          <img src="/更多.svg" alt="菜单" className="w-full h-full" />
         </button>
         {/* 转换正、倒计时按钮 */}
         <div className="absolute left-1/2 -translate-x-1/2 top-[2.75rem] z-20">
@@ -226,10 +222,10 @@ export default function Home() {
           <img
             src={
               hasActiveSession
-                ? "/src/assets/images/猫.svg" // 有活动会话时（running/paused）显示猫
+                ? "/猫.svg" // 有活动会话时（running/paused）显示猫
                 : hasCompletedFocus
-                ? "/src/assets/images/箱中猫.svg" // 完成过专注但无活动会话时显示箱中猫
-                : "/src/assets/images/朝左箱子.svg" // 从未完成过专注时显示箱子
+                ? "/箱中猫.svg" // 完成过专注但无活动会话时显示箱中猫
+                : "/朝左箱子.svg" // 从未完成过专注时显示箱子
             }
             alt="箱子"
             className="w-[22rem] h-auto opacity-100"
@@ -295,7 +291,7 @@ export default function Home() {
           >
             <div className="absolute left-[4rem] sm:left-[5rem] top-[22.75rem] sm:top-[20rem] w-full max-w-[13rem] sm:max-w-[14rem] z-20">
               <img
-                src="/src/assets/images/click对话框.svg"
+                src="/click对话框.svg"
                 alt="click对话框"
                 className="w-full h-auto opacity-100"
               />

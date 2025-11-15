@@ -25,23 +25,23 @@ export function CustomSidebar({ isOpen, onClose }: CustomSidebarProps) {
       >
         <div className="relative flex flex-col h-full overflow-hidden">
           <img
-            src="/src/assets/images/侧栏雪花1.svg"
+            src="/侧栏雪花1.svg"
             alt="雪花1"
             className="absolute left-[7.75rem] top-[4.66rem] w-[4.38rem] h-[4.38rem] opacity-100 -rotate-[13.62deg] z-0"
           />
           <img
-            src="/src/assets/images/侧栏雪花2.svg"
+            src="/侧栏雪花2.svg"
             alt="雪花2"
             className="absolute left-[0.69rem] top-[28.63rem] w-[3.75rem] h-[3.75rem] opacity-100 -rotate-[13.62deg] z-0"
           />
           <img
-            src="/src/assets/images/侧栏雪花3.svg"
+            src="/侧栏雪花3.svg"
             alt="雪花3"
             className="absolute left-[7.88rem] top-[38.13rem] w-[5rem] h-[5rem] opacity-100 rotate-[11.29deg] z-0"
           />
 
           <img
-            src="/src/assets/images/侧栏小猫.svg"
+            src="/侧栏小猫.svg"
             alt="小猫"
             className="absolute bottom-[4.5rem] w-[10.04rem] h-[6.75rem] opacity-100 rotate-[19.73deg] z-0"
           />

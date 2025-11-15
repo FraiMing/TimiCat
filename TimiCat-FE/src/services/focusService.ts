@@ -53,11 +53,11 @@ export interface DayItem {
   minutes: number;
 }
 
-// 汇总：今日时长/次数/连续天数/近7或30天趋势/近48h是否活跃
+// 汇总：今日时长/次数/总时长/近7或30天趋势/近48h是否活跃
 export interface FocusSummary {
   today_minutes: number;
   today_count: number;
-  streak_days: number;
+  total_minutes: number;
   trend: DayItem[];
   inactive_48h: boolean; // 惩罚机制，敬请期待
 }
@@ -118,10 +118,17 @@ class FocusService {
   // 获取统计摘要：支持 7d / 30d
   // 30d模式敬请期待
   async getSummary(range: "7d" | "30d" = "7d"): Promise<FocusSummary> {
-    const response = await apiClient.get<FocusSummary>(
+    const response = await apiClient.get<any>(
       `/api/v1/stats/summary?range=${range}`
     );
-    return response.data;
+    const data = response.data;
+    return {
+      today_minutes: data.today_minutes,
+      today_count: data.today_count,
+      total_minutes: data.total_minutes,
+      trend: data.last7d || [],
+      inactive_48h: data.inactive_48h ?? false,
+    };
   }
 }
 

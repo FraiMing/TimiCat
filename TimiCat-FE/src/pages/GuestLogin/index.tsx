@@ -32,14 +32,14 @@ export default function GuestLogin() {
   return (
     <div className="relative bg-[linear-gradient(180deg,_rgba(205,_238,_248,_1)_0%,_rgba(255,_255,_255,_1)_100%)] min-h-screen w-full overflow-hidden flex flex-col items-center">
       <img
-        src="/src/assets/images/顶部装饰.svg"
+        src="/顶部装饰.svg"
         alt="顶部装饰"
         className="absolute left-0 top-0 w-full h-auto opacity-100 z-0"
       />
 
       <div className="relative w-full flex justify-center mt-[12.75rem] sm:mt-[10rem] px-4 z-10 md:mt-[24rem]">
         <img
-          src="/src/assets/images/登录logo.svg"
+          src="/登录logo.svg"
           alt="登录logo"
           className="w-full max-w-[23.25rem] h-auto sm:max-w-[26rem] opacity-100"
         />
@@ -47,7 +47,7 @@ export default function GuestLogin() {
 
       <div className="relative w-full flex justify-center mt-[1.75rem] sm:mt-[2rem] px-4 z-10 md:mt-[1.5rem]">
         <img
-          src="/src/assets/images/Frame 1.svg"
+          src="/Frame 1.svg"
           alt="Frame 1"
           className="w-[15rem] h-auto sm:w-[17rem] opacity-100"
         />
@@ -68,7 +68,7 @@ export default function GuestLogin() {
       </button>
 
       <img
-        src="/src/assets/images/底部装饰.svg"
+        src="/底部装饰.svg"
         alt="底部装饰"
         className="absolute left-0 bottom-0 w-full h-auto opacity-100 z-0"
       />

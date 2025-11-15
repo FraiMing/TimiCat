@@ -48,11 +48,7 @@ export function ShowTask({
             </h2>
           </button>
           <button onClick={onCreateClick} className="w-8 h-8 absolute right-6">
-            <img
-              src="/src/assets/images/添加 1.svg"
-              alt="创建任务"
-              className="w-full h-full"
-            />
+            <img src="/添加 1.svg" alt="创建任务" className="w-full h-full" />
           </button>
         </div>
 
@@ -84,11 +80,7 @@ export function ShowTask({
                   onClick={() => handleRemove(task.id)}
                   className="w-6 h-6 flex-shrink-0"
                 >
-                  <img
-                    src="/src/assets/images/删除.svg"
-                    alt="删除"
-                    className="w-full h-full"
-                  />
+                  <img src="/删除.svg" alt="删除" className="w-full h-full" />
                 </button>
               </div>
             ))

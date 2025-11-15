@@ -39,19 +39,19 @@ const ChooseCat = () => {
           } relative bg-[linear-gradient(180deg,_rgba(205,_238,_248,_1)_0%,_rgba(255,_255,_255,_1)_100%)] min-h-screen w-full overflow-hidden flex flex-col items-center`}
         >
           <img
-            src="/src/assets/images/顶部装饰.svg"
+            src="/顶部装饰.svg"
             alt="顶部装饰"
             className="absolute left-0 top-0 w-full h-auto opacity-100 z-0"
           />
           <img
-            src="/src/assets/images/雪花.svg"
+            src="/雪花.svg"
             alt="雪花"
             className="absolute left-0 top-[10.56rem] w-full max-w-[30rem] h-auto sm:max-w-[27rem] opacity-100 z-0 "
           />
           <div className="relative w-full flex justify-center mt-[12.25rem] sm:mt-[10rem] z-10 md:mt-[25rem]">
             <div className="relative w-full max-w-[23.25rem] sm:max-w-[26rem] px-4 md:max-w-[40rem]">
               <img
-                src="/src/assets/images/choose对话框1.svg"
+                src="/choose对话框1.svg"
                 alt="对话框1"
                 className="absolute left-[1rem] top-0 w-[13.75rem] sm:w-[15rem] h-auto opacity-100"
               />
@@ -63,7 +63,7 @@ const ChooseCat = () => {
           <div className="relative w-full flex justify-center mt-[3rem] sm:mt-[2.5rem] z-10">
             <div className="relative w-full max-w-[23.25rem] sm:max-w-[26rem] px-4">
               <img
-                src="/src/assets/images/choose对话框2.svg"
+                src="/choose对话框2.svg"
                 alt="对话框2"
                 className="absolute right-[1rem] top-0 w-[13.75rem] sm:w-[15rem] h-auto opacity-90"
               />
@@ -73,7 +73,7 @@ const ChooseCat = () => {
             </div>
           </div>
           <img
-            src="/src/assets/images/树状底部装饰.svg"
+            src="/树状底部装饰.svg"
             alt="底部装饰"
             className="absolute left-0 bottom-0 w-full h-auto opacity-100 z-0"
           />
@@ -83,7 +83,7 @@ const ChooseCat = () => {
               className="hover:opacity-80 transition-opacity"
             >
               <img
-                src="/src/assets/images/choose朝右箱子.svg"
+                src="/choose朝右箱子.svg"
                 alt="左边箱子"
                 className="w-[10.63rem] sm:w-[12rem] h-auto opacity-100"
               />
@@ -93,7 +93,7 @@ const ChooseCat = () => {
               className="hover:opacity-80 transition-opacity"
             >
               <img
-                src="/src/assets/images/朝左箱子.svg"
+                src="/朝左箱子.svg"
                 alt="右边箱子"
                 className={`animate-[wiggle_0.5s_ease-in-out_infinite] transition-all ${
                   selectedBox === null ? "animate-shake" : ""

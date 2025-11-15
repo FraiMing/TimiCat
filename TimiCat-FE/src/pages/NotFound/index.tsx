@@ -4,7 +4,7 @@ export default function NotFound() {
   return (
     <div className="relative flex flex-col items-center justify-center align-middle h-screen w-full overflow-hidden">
       <img
-        src="/src/assets/images/404底图.svg"
+        src="/404底图.svg"
         alt="404背景"
         className="absolute inset-0 w-full h-full object-cover z-0"
       />

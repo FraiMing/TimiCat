@@ -35,7 +35,7 @@ const Finish = () => {
       }`}
     >
       <img
-        src="/src/assets/images/顶部装饰.svg"
+        src="/顶部装饰.svg"
         alt="顶部装饰"
         className="absolute left-0 top-0 w-full h-auto opacity-100 z-0"
       />
@@ -50,24 +50,24 @@ const Finish = () => {
       </button>
 
       <img
-        src="/src/assets/images/click雪花.svg"
+        src="/click雪花.svg"
         alt="click雪花"
         className="absolute left-0 top-[10.31rem] w-full max-w-[23.07rem] sm:max-w-[25rem] h-auto opacity-100 z-0"
       />
       <img
-        src="/src/assets/images/click猫爪1.svg"
+        src="/click猫爪1.svg"
         alt="click猫爪1"
         className="absolute left-2 bottom-[10rem] w-[9.38rem] sm:w-[10.5rem] h-auto opacity-80 -rotate-[21.43deg] z-5"
       />
       <img
-        src="/src/assets/images/click猫爪2.svg"
+        src="/click猫爪2.svg"
         alt="click猫爪2"
         className="absolute right-2 top-[15.19rem] w-40 sm:w-[11rem] h-auto opacity-40 rotate-[48.91deg] z-5"
       />
 
       <div className="absolute left-1/2 -translate-x-1/2 top-[12.31rem] w-full max-w-[21.25rem] sm:max-w-[23rem] h-[37.5rem] sm:h-[40rem] z-10">
         <img
-          src="/src/assets/images/Group 3.svg"
+          src="/Group 3.svg"
           alt="Group 3"
           className="w-full h-full opacity-100"
         />
@@ -75,11 +75,11 @@ const Finish = () => {
 
       <div className="absolute left-[4rem] sm:left-[5rem] top-[22.75rem] sm:top-[20rem] w-full max-w-[13.13rem] sm:max-w-[14rem] z-20 md:max-w-[17rem] z-20">
         <img
-          src="/src/assets/images/click对话框.svg"
+          src="/click对话框.svg"
           alt="click对话框"
           className="w-full h-auto opacity-100"
         />
-        <div className="absolute top-[2rem] left-6 right-2 text-2xl font-normal leading-[2rem] text-black align-top md:left-[3rem] top-[2.5rem] right-10">
+        <div className="absolute top-[1rem] left-6 right-2 text-2xl font-normal leading-[2rem] text-black align-top md:left-[3rem] top-[2.5rem] right-5">
           "人，学累了吗？让咪陪你休息一下吧。"
         </div>
       </div>
@@ -89,11 +89,7 @@ const Finish = () => {
       </div>
       <div className="absolute left-1/2 top-[31.31rem] sm:top-[28rem] -translate-x-1/2 z-30">
         <img
-          src={
-            hasCompletedBefore
-              ? "/src/assets/images/猫.svg"
-              : "/src/assets/images/箱中猫.svg"
-          }
+          src={hasCompletedBefore ? "/猫.svg" : "/箱中猫.svg"}
           alt="箱子"
           className="w-[22rem] sm:w-[18rem] h-auto opacity-100"
         />

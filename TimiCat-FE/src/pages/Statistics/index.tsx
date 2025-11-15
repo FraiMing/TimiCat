@@ -2,7 +2,7 @@
 
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { Bar, BarChart, CartesianGrid, XAxis } from "recharts";
+import { Bar, BarChart, XAxis } from "recharts";
 import type { ChartConfig } from "@/components/common/chart";
 import {
   ChartContainer,
@@ -48,15 +48,17 @@ const Statistics = () => {
   } satisfies ChartConfig;
 
   const chartData =
-    summary?.trend.map((item) => ({
-      date: item.date,
-      minutes: item.minutes,
-    })) || [];
+    summary && Array.isArray(summary.trend)
+      ? summary.trend.map((item) => ({
+          date: item.date,
+          minutes: item.minutes,
+        }))
+      : [];
 
   return (
     <div className="relative min-h-screen w-full overflow-hidden">
       <img
-        src="/src/assets/images/侧边栏三张底图.svg"
+        src="/侧边栏三张底图.svg"
         alt="背景"
         className="absolute inset-0 w-full h-full object-cover z-0"
       />
@@ -70,45 +72,32 @@ const Statistics = () => {
         </span>
       </button>
 
-      {/* 内容区域 */}
-      <div className="relative z-10 flex flex-col items-center px-4 pb-8 pt-20 md:pt-24">
-        {/* 标题 */}
+      <div className="relative z-10 flex flex-col items-center px-4 pb-8 pt-10 md:pt-18">
         <h1 className="text-black text-center text-4xl md:text-5xl font-normal mb-8 md:mb-12">
           历史统计
         </h1>
 
-        {/* 加载状态 */}
         {loading && (
           <div className="flex items-center justify-center py-20">
             <div className="text-xl text-gray-600">加载中...</div>
           </div>
         )}
 
-        {/* 错误状态 */}
         {error && (
           <div className="flex items-center justify-center py-20">
             <div className="text-xl text-red-500">{error}</div>
           </div>
         )}
 
-        {/* 数据展示 */}
         {!loading && !error && summary && (
-          <div className="w-full max-w-4xl mx-auto space-y-8">
-            {/* 图表容器 */}
-            <div className="w-full bg-white/80 backdrop-blur-sm rounded-lg p-4 md:p-6 shadow-lg">
-              <h2 className="text-2xl font-semibold mb-4 text-gray-800">
-                近7天趋势
-              </h2>
+          <div className="w-full max-w-4xl mx-auto space-y-8 mt-28 md:mt-32">
+            {/* shadcn-barchart 图表容器 */}
+            <div className="w-full rounded-lg p-4 md:p-6">
               <ChartContainer
                 config={chartConfig}
                 className="h-[250px] md:h-[300px] w-full"
               >
                 <BarChart accessibilityLayer data={chartData}>
-                  <CartesianGrid
-                    vertical={false}
-                    strokeDasharray="3 3"
-                    stroke="#e0e0e0"
-                  />
                   <XAxis
                     dataKey="date"
                     tickLine={false}
@@ -129,38 +118,38 @@ const Statistics = () => {
                     dataKey="minutes"
                     fill="rgba(142, 210, 240, 1)"
                     radius={[8, 8, 0, 0]}
+                    background={{ fill: "rgba(230, 245, 250, 1)" }}
                   />
                 </BarChart>
               </ChartContainer>
             </div>
 
-            {/* 统计数据展示（按附件样式，移除“总共专注时长”） */}
-            <div className="w-full bg-white/80 backdrop-blur-sm rounded-lg p-6 md:p-8 shadow-lg">
+            <div className="w-full rounded-lg p-6 md:p-8">
               <div className="w-full flex flex-col items-start gap-4 md:gap-6 px-2 md:px-6">
                 <div className="w-full">
-                  <div className="text-black text-[1.2rem] sm:text-[1.6rem] md:text-2xl font-normal mb-2">
+                  <div className="text-black text-[1.2rem] sm:text-xl md:text-2xl font-normal mb-2">
                     今日专注时长：
                   </div>
-                  <div className="text-blue-600 font-bold text-2xl sm:text-3xl md:text-4xl">
+                  <div className="font-bold text-xl sm:text-2xl md:text-3xl">
                     {summary.today_minutes}min
                   </div>
                 </div>
 
                 <div className="w-full">
-                  <div className="text-black text-[1.2rem] sm:text-[1.6rem] md:text-2xl font-normal mb-2">
+                  <div className="text-black text-[1.2rem] sm:text-xl md:text-2xl font-normal mb-2">
                     今日专注次数：
                   </div>
-                  <div className="text-green-600 font-bold text-2xl sm:text-3xl md:text-4xl">
+                  <div className="font-bold text-xl sm:text-2xl md:text-3xl">
                     {summary.today_count}次
                   </div>
                 </div>
 
                 <div className="w-full">
-                  <div className="text-black text-[1.2rem] sm:text-[1.6rem] md:text-2xl font-normal mb-2">
+                  <div className="text-black text-[1.2rem] sm:text-xl md:text-2xl font-normal mb-2">
                     总共专注时间：
                   </div>
-                  <div className="text-gray-800 font-bold text-2xl sm:text-3xl md:text-4xl">
-                    {summary.streak_days}min
+                  <div className="font-bold text-xl sm:text-2xl md:text-3xl">
+                    {summary.total_minutes}min
                   </div>
                 </div>
               </div>
